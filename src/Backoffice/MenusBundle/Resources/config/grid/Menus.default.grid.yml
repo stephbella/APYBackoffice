@@ -1,0 +1,49 @@
+Backoffice\MenusBundle\Entity\Menus:
+    Source:
+        columns:
+            id: ~
+            nomMenus: ~
+            slugMenus: ~
+            ordreMenus: ~
+            nivMenus: ~
+            dateCreaMenus: ~
+            dateModifMenus: ~        
+        groupBy: ~
+        filterable: ~
+    Columns:
+        id:
+            filterable: true
+            visible: true
+            id: id
+            title: id
+        nomMenus:
+            filterable: true
+            visible: true
+            id: nomMenus
+            title: nomMenus
+        slugMenus:
+            filterable: true
+            visible: true
+            id: slugMenus
+            title: slugMenus
+        ordreMenus:
+            filterable: true
+            visible: true
+            id: ordreMenus
+            title: ordreMenus
+        nivMenus:
+            filterable: true
+            visible: true
+            id: nivMenus
+            title: nivMenus
+        dateCreaMenus:
+            filterable: true
+            visible: true
+            id: dateCreaMenus
+            title: dateCreaMenus
+        dateModifMenus:
+            filterable: true
+            visible: true
+            id: dateModifMenus
+            title: dateModifMenus
+        

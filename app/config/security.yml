@@ -1,0 +1,31 @@
+security:
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    firewalls:
+        secured_area:
+            pattern: ^/
+            anonymous: ~
+            form_login:
+                login_path: /
+                check_path: /login_check
+            logout:
+                path:   /logout
+                target: /
+    
+    providers:
+        in_memory:
+            memory:
+                users:
+                    stephbella: { password: d435a93f08fb4b0342f25d1f5522f5352b17449b, roles: 'ROLE_ADMIN' }
+    encoders:
+        Symfony\Component\Security\Core\User\User:
+            algorithm:   sha1
+            iterations: 1
+            encode_as_base64: false
+    
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - { path: ^/administrateur, roles: ROLE_USER_IP, requires_channel: https }
+        - { path: ^/administrateur, roles: ROLE_USER_METHOD, methods: [POST, PUT] }

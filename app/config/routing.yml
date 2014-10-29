@@ -1,0 +1,12 @@
+backoffice_security:
+    resource: "@BackofficeSecurityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+backoffice_contenus:
+    resource: "@BackofficeContenusBundle/Resources/config/routing.yml"
+    prefix:   /
+
+backoffice_menus:
+    resource: "@BackofficeMenusBundle/Resources/config/routing.yml"
+    prefix:   /
+

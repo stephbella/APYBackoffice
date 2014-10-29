@@ -1,0 +1,32 @@
+{
+    "name": "apy/Backoffice",
+    "description": "Symfony2 CMS APY",
+    "keywords": ["Symfony", "backoffice"],
+    "homepage": "https://github.com/stephbella/APYBackoffice",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephane",
+            "email": "stephbella74@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">=2.0.0",
+        "twig/twig": ">=1.5.0"
+    },
+    "suggest": {
+        "ext-intl": "Translate the grid",
+        "ext-mbstring": "Convert your data with the right charset",
+        "PHPExcel": "Export the grid (Excel, HTML or PDF)"
+    },
+    "autoload": {
+        "psr-4": { "APY\\Backoffice\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.1-dev"
+        }
+    }
+}

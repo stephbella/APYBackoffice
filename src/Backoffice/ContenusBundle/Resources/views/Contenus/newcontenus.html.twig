@@ -1,0 +1,29 @@
+{# src/Backoffice/ContentsBundle/Resources/views/Contenus/newcontenu.html.twig #}
+{% extends "BackofficeMenusBundle:Menus:index.html.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block ssHeader %}
+        {{ parent() }}
+    {% endblock %}
+    {% block contenu %}
+        {% block menus %}{{ parent() }}{% endblock %}
+        <h2 style="margin-left: 170px; margin-top: 30px; color: #525252">Gestion des contenus</h2>
+        <div style="margin-top: 10px;margin-left: 300px;"><a href="/contents">Retour liste des contenus</a></div>
+        <div style="margin-top: 10px; margin-left: 300px;"><a href="/logout">Se déconnecter</a></div>
+        <div style="margin-left: 300px;margin-top: 20px;margin-right:300px;" width="840">
+            <form method="post" {{ form_enctype(form) }}>
+                {{ form_widget(form) }}
+                <script type="text/javascript">
+                    // Replace the <textarea id="editor1"> with a CKEditor
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'form_descriptContents' );            
+                </script>
+                <input type="submit" class="btn btn-primary" />
+            </form>
+        <div>
+    {% endblock %}
+{% endblock %}

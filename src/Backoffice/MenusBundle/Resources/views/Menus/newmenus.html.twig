@@ -1,0 +1,24 @@
+{# src/Backoffice/MenusBundle/Resources/views/Menus/newmenus.html.twig #}
+{% extends "BackofficeMenusBundle:Menus:index.html.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block ssHeader %}
+        {{ parent() }}
+    {% endblock %}
+    {% block contenu %}
+        {% block menus %}{{ parent() }}{% endblock %}
+        <h2 style="margin-left: 170px; margin-top: 30px; color: #525252">Gestion des menus</h2>
+        <div style="margin-top: 10px;margin-left: 300px;"><a href="/menus">Retour liste des menus</a></div>
+        <div style="margin-top: 10px; margin-left: 300px;"><a href="/logout">Se déconnecter</a></div>
+        <div style="margin-left: 500px;margin-top: 20px;" width="840">
+            <form method="post" {{ form_enctype(form) }}>
+                {{ form_widget(form) }}
+                <input type="submit" class="btn btn-primary" />
+            </form>
+        <div>
+    {% endblock %}
+{% endblock %}

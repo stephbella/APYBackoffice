@@ -1,0 +1,12 @@
+backoffice_menus_homepage:
+    path:     /menus
+    defaults: { _controller: BackofficeMenusBundle:Menus:index }
+new_menus:
+    path:     /new_menus
+    defaults: { _controller: BackofficeMenusBundle:Menus:newmenu }
+edit_menus:
+    path:     /edit_menus/{id}
+    defaults: { _controller: BackofficeMenusBundle:Menus:editmenu }
+menus_delete:
+    path:     /menus_delete/{id}
+    defaults: { _controller: BackofficeMenusBundle:Menus:deletemenu }

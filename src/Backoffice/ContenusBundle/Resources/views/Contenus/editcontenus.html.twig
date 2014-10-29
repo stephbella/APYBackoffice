@@ -1,0 +1,15 @@
+{# src/Backoffice/ContenusBundle/Resources/views/Contenus/index.html.twig #}
+{% extends "BackofficeContenusBundle:Contenus:newcontenus.html.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block ssHeader %}
+        {{ parent() }}
+    {% endblock %}
+    {% block contenu %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,55 @@
+Backoffice\ContenusBundle\Entity\Contents:
+    Source:
+        columns:
+            id: ~
+            nomContents: ~
+            slugContents: ~
+            descriptContents: ~
+            isActivatedMenus: ~
+            idMenusContents: ~
+            dateCreaContents: ~
+            dateModifContents: ~        
+        groupBy: ~
+        filterable: ~
+    Columns:
+        id:
+            filterable: true
+            visible: true
+            id: id
+            title: id
+        nomContents:
+            filterable: true
+            visible: true
+            id: nomContents
+            title: Titre
+        slugContents:
+            filterable: true
+            visible: true
+            id: slugContents
+            title: Slug
+        descriptContents:
+            filterable: true
+            visible: true
+            id: descriptContents
+            title: Descriptif
+        isActivatedMenus:
+            filterable: true
+            visible: true
+            id: isActivatedMenus
+            title: Actif (?)
+        idMenusContents:
+            filterable: true
+            visible: true
+            id: idMenusContents
+            title: idMenusContents
+        dateCreaContents:
+            filterable: true
+            visible: true
+            id: dateCreaContents
+            title: dateCreaContents
+        dateModifContents:
+            filterable: true
+            visible: true
+            id: dateModifContents
+            title: dateModifContents
+        

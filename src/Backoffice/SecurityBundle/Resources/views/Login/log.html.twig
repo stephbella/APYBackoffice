@@ -1,0 +1,46 @@
+{# src/Backoffice/SecurityBundle/Resources/views/Login/log.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}WebCreator2 - Backend{% endblock %}
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block ssHeader %}
+        {{ parent() }}
+    {% endblock %}
+    <table cellpadding="0" cellspacing="0" align="center" width="840" height="300">
+        <tr><td colspan="5" height="10"></td></tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td colspan="3" height="10"><div style="font-size: 18px; color: #525252">Module d'Administration</div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="10"></td>
+                    </tr>
+                    <tr>
+                        <td width="20"></td>
+                        <td width="179" valign="top">
+                            {% block contenu %}
+                                {% if error %}
+                                    <div>{{ error.message }}</div>
+                                {% endif %}
+                                <form action="{{ path('login_check') }}" method="post">
+                                    <label for="username">Login:</label>
+                                    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="_password" />                                
+                                    <input type="hidden" name="_target_path" value="/menus" />
+                                    <button type="submit">login</button>
+                                </form>
+                            {% endblock %} <!-- fin du code pour le contenus -->	
+                        </td>
+                        <td width="37"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

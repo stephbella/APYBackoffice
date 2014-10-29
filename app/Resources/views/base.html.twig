@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Société yourfaithfully{% endblock %}</title>
+        {% stylesheets 'css/feuille.css' filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />
+        <script src="{{ asset('js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    </head>
+    <body bgcolor="#F3F3F3" topmargin="0" rightmargin="0" marginwidth="0" marginheight="0" leftmargin="0"
+bottommargin="0" style="background: url({{ asset('images/fond_de_page.jpg') }}) #C7CDCD repeat; background-repeat: repeat-x">
+    {% block body %}
+    {% block header %}
+        <table cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td width="647" height="124" background="{{ asset('images/logo.jpg') }}"></td>
+                <td width="173" height="124" background="{{ asset('images/2.jpg') }}"></td>
+                <td width="204" height="124" background="{{ asset('images/3.jpg') }}"></td>
+            </tr>
+        </table>
+    {% endblock %}
+    {% block ssHeader %}
+        <table cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td width="1024" height="133" background="{{ asset('images/4.jpg') }}"></td>
+            </tr>
+        </table>
+    {% endblock %}
+    {% block debtablecontenu %}
+        <table cellpadding="0" cellspacing="0" align="center" width="1024" height="366" background="{{ asset('images/5.jpg') }}">
+            <tr><td colspan="5" height="10"></td></tr>
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="margin-left: 15px;">
+                       <tr>
+                            <td width="20"></td>
+                            <td width="199" valign="top">
+    {% endblock %}
+                            <!-- dèbut du code pour le menu -->
+    {% block menus %}	
+                                <table cellpadding="0" cellspacing="0" align="center">
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button1.jpg') }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button2.jpg') }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button3.jpg') }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button4.jpg') }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button5.jpg') }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="148" height="30" background="{{ asset('images/button5.jpg') }}"></td>
+                                    </tr>
+                                </table>
+    {% endblock %}
+                            <!-- fin du code pour le menu -->	
+                            </td>
+                            <td width="16"></td>
+                            <td width="720">	
+                            <!-- dèbut du code pour le contenus -->
+    {% block contenu %}        
+                                <table cellpadding="0" cellspacing="0" style="margin-left: 40px;">
+                                    <tr>
+                                        <td width="588" height="32" background="{{ asset('images/9.jpg') }}" class="titre">
+                                        &nbsp;
+                                        Espace sécurisé de ventes privées Micro Cool</td>
+                                    </tr>
+                                </table>
+                                <div class="texte" style="margin-left: 30px;">
+                                    <img src="{{ asset('images/carre.jpg') }}" border="0" align="right">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla at enim. Aliquam mi nisl, vulputate eget, pulvinar in, tristique quis, arcu. Duis lorem. Nullam ornare, mi quis dignissim commodo, orci urna consectetuer tortor, id ultricies nulla tellus eu metus. Nunc magna. Quisque tempus, libero et rutrum fringilla, mi velit faucibus nisi, a pretium augue quam vitae nisi. Morbi massa dolor, semper quis, varius quis, pellentesque id, lacus. Vestibulum viverra. Mauris nibh. Suspendisse vel sem eu libero congue mollis. Pellentesque porttitor. Pellentesque enim pede, dictum ut, ornare eu, porttitor vitae, erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Nunc aliquam. Suspendisse tincidunt mauris nonummy ante.
+                                    <br><br>
+                                    Phasellus malesuada convallis neque. Nam posuere. Curabitur turpis. Nullam a massa. Sed varius, orci et tincidunt egestas, augue ipsum laoreet diam, sed tristique metus magna eget massa. Etiam eu mauris vitae sapien posuere iaculis. Proin urna. Nam mattis laoreet lorem. Morbi id diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum pulvinar malesuada neque. Donec vestibulum mi a justo. Sed viverra sollicitudin dui. Praesent a massa eget augue gravida tincidunt. Morbi urna. Donec vehicula ante sed sem. Donec rutrum. Vestibulum ante. Vivamus lectus ante, iaculis ut, laoreet sed, rhoncus sit amet, dui. Suspendisse potenti.
+                                    <br><br>
+                                    Aliquam rhoncus mauris vitae urna. Cras odio ante, bibendum consectetuer, posuere eget, rhoncus vitae, dui. Sed sit amet metus eget pede elementum vulputate. Aliquam dolor ipsum, pharetra sit amet, vulputate rutrum, bibendum et, tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vehicula, dolor eu venenatis pharetra, libero leo vestibulum felis, a ullamcorper velit risus nec mi. Fusce tempus euismod purus. Quisque adipiscing. Pellentesque vel risus. Maecenas id urna volutpat mauris facilisis imperdiet. Nullam venenatis turpis eget purus. Maecenas nec magna. Donec quis erat a odio porta hendrerit. Proin ultricies felis. Curabitur aliquam turpis in velit.
+                                </div>
+    {% endblock %}	
+                            <!-- fin du code pour le contenus -->
+    {% block fintablecontenu %}
+                            </td>
+                            <td width="37"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    {% endblock %}
+        <!-- Voici les trois lignes qui constitus le pied de page -->
+    {% block footer %}
+        <table cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td width="1024" height="38" background="{{ asset('images/6.jpg') }}"></td>
+            </tr>
+            <tr>
+                <td width="1024" height="61" background="{{ asset('images/7.jpg') }}">	
+                </td>
+            </tr>
+            <tr>
+                <td width="1024" height="76" background="{{ asset('images/8.jpg') }}"  class="copyright">
+                </td>
+            </tr>
+        </table>
+    {% endblock %}
+    {% endblock %}
+    </body>
+</html>

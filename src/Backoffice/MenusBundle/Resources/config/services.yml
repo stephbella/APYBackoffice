@@ -1,0 +1,4 @@
+services:
+#    backoffice_menus.example:
+#        class: Backoffice\MenusBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

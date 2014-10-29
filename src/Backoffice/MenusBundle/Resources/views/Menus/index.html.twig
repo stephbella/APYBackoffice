@@ -1,0 +1,27 @@
+{# src/Backoffice/MenusBundle/Resources/views/Menus/index.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block title %}Webcreator2 - Backend{% endblock %}
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    {% block ssHeader %}
+        {{ parent() }}
+    {% endblock %}
+    {% block contenu %}
+        {% block menus %}
+            <table style="margin-left: 170px;color:#fff;">
+                <tr>
+                    <td width="146" height="28" background="{{ asset('images/button5.jpg') }}"><a href="/menus" style="margin-left: 50px;color: #fff;text-decoration: none;">Menus</a></td>
+                    <td width="146" height="28" background="{{ asset('images/button5.jpg') }}"><a href="/contents" style="margin-left: 50px;color: #fff;text-decoration: none;">Contenus</a></td>
+                </tr>
+            </table>
+        {% endblock %}
+        <h2 style="margin-left: 170px; margin-top: 30px; color: #525252">Liste des menus</h2>
+        <div style="margin-top: 10px; margin-left: 10px;"><a href="/new_menus">Nouveau menu</a></div>
+        <div style="margin-top: 10px; margin-left: 10px;"><a href="/logout">Se déconnecter</a></div>
+        <div style="margin-left :10px; width: 1024;">{{ grid_search(grid) }}
+        {{ grid(grid) }}</div>
+    {% endblock %}
+{% endblock %}

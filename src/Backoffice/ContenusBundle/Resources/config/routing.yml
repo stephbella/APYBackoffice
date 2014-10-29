@@ -1,0 +1,12 @@
+backoffice_contenus_homepage:
+    path:     /contents
+    defaults: { _controller: BackofficeContenusBundle:Contenus:index }
+new_contenus:
+    path:     /new_contenus
+    defaults: { _controller: BackofficeContenusBundle:Contenus:newcontenu }
+edit_contenus:
+    path:     /edit_contenus/{id}
+    defaults: { _controller: BackofficeContenusBundle:Contenus:editcontenu }
+contenus_delete:
+    path:     /contenus_delete/{id}
+    defaults: { _controller: BackofficeContenusBundle:Contenus:deletecontenu }
